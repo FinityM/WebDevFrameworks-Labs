@@ -1,0 +1,10 @@
+build
+docs
+vendor
+.idea
+*.phar
+composer.lock
+/.idea/
+.idea
+.env
+
