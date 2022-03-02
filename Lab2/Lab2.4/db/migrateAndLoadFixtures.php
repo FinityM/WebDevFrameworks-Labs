@@ -7,8 +7,12 @@ use Tudublin\MovieRepository;
 use Tudublin\Product;
 use Tudublin\ProductRepository;
 
+use Tudublin\Book;
+use Tudublin\BookRepository;
+
 $movieRepository = new MovieRepository();
 $productRepository = new ProductRepository();
+$bookRepository = new BookRepository();
 
 // (1) drop then create table
 $movieRepository->dropTable();
@@ -17,11 +21,16 @@ $movieRepository->createTable();
 $productRepository->dropTable();
 $productRepository->createTable();
 
+$bookRepository->dropTable();
+$bookRepository->createTable();
+
 
 // (2) delete any existing objects
 $movieRepository->deleteAll();
 
 $productRepository->deleteAll();
+
+$bookRepository->deleteAll();
 
 
 // (3) create & insert objects

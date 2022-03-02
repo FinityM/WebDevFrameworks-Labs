@@ -19,4 +19,12 @@ class MainController
         require __DIR__ . '/../templates/movies_list.php';
     }
 
+    public function listProducts()
+    {
+        $productRepository = new ProductRepository();
+        $products = $productRepository->findAll();
+
+        require  __DIR__ . '/../templates/products_list.php';
+    }
+
 }
