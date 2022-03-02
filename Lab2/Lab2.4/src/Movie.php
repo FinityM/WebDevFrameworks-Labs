@@ -9,14 +9,6 @@ class Movie
     private float $price;
     private string $category;
 
-    private int $productId;
-
-    public function getProduct()
-    {
-        $productRepository = new ProductRepository();
-        return $productRepository->find($this->productId);
-    }
-
     public function getId(): int
     {
         return $this->id;
