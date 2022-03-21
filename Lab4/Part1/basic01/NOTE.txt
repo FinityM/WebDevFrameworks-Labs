@@ -1,0 +1,1 @@
+env files MUST be configured by the user of this code if they wish to connect to a database and make some aspects function
